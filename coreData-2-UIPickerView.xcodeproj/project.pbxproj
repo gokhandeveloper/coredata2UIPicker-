@@ -13,6 +13,10 @@
 		76DCAFFB1AE532E50059D233 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76DCAFFA1AE532E50059D233 /* Images.xcassets */; };
 		76DCAFFE1AE532E50059D233 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76DCAFFC1AE532E50059D233 /* LaunchScreen.xib */; };
 		76DCB00A1AE532E50059D233 /* coreData_2_UIPickerViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76DCB0091AE532E50059D233 /* coreData_2_UIPickerViewTests.swift */; };
+		76DCB0141AE548280059D233 /* PickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76DCB0131AE548280059D233 /* PickerView.swift */; };
+		76DCB0161AE55C200059D233 /* coreData-2-UIPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76DCB0151AE55C200059D233 /* coreData-2-UIPickerView.swift */; };
+		76DCB0181AE55F750059D233 /* AddToPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76DCB0171AE55F750059D233 /* AddToPickerView.swift */; };
+		76DCB01A1AE5643F0059D233 /* ReadMe.md in Sources */ = {isa = PBXBuildFile; fileRef = 76DCB0191AE5643F0059D233 /* ReadMe.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +40,10 @@
 		76DCB0031AE532E50059D233 /* coreData-2-UIPickerViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "coreData-2-UIPickerViewTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		76DCB0081AE532E50059D233 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		76DCB0091AE532E50059D233 /* coreData_2_UIPickerViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = coreData_2_UIPickerViewTests.swift; sourceTree = "<group>"; };
+		76DCB0131AE548280059D233 /* PickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerView.swift; sourceTree = "<group>"; };
+		76DCB0151AE55C200059D233 /* coreData-2-UIPickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "coreData-2-UIPickerView.swift"; sourceTree = SOURCE_ROOT; };
+		76DCB0171AE55F750059D233 /* AddToPickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddToPickerView.swift; sourceTree = "<group>"; };
+		76DCB0191AE5643F0059D233 /* ReadMe.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = ReadMe.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +86,11 @@
 			isa = PBXGroup;
 			children = (
 				76DCAFF01AE532E50059D233 /* AppDelegate.swift */,
+				76DCB0151AE55C200059D233 /* coreData-2-UIPickerView.swift */,
 				76DCAFF71AE532E50059D233 /* Main.storyboard */,
+				76DCB0191AE5643F0059D233 /* ReadMe.md */,
+				76DCB0131AE548280059D233 /* PickerView.swift */,
+				76DCB0171AE55F750059D233 /* AddToPickerView.swift */,
 				76DCAFFA1AE532E50059D233 /* Images.xcassets */,
 				76DCAFFC1AE532E50059D233 /* LaunchScreen.xib */,
 				76DCAFF21AE532E50059D233 /* coreData_2_UIPickerView.xcdatamodeld */,
@@ -213,7 +225,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				76DCAFF41AE532E50059D233 /* coreData_2_UIPickerView.xcdatamodeld in Sources */,
+				76DCB0181AE55F750059D233 /* AddToPickerView.swift in Sources */,
+				76DCB01A1AE5643F0059D233 /* ReadMe.md in Sources */,
 				76DCAFF11AE532E50059D233 /* AppDelegate.swift in Sources */,
+				76DCB0161AE55C200059D233 /* coreData-2-UIPickerView.swift in Sources */,
+				76DCB0141AE548280059D233 /* PickerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

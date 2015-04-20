@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7519.1" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7513.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Picker View-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="PickerView" customModule="coreData_2_UIPickerView" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +16,106 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aim-r6-9sp">
+                                <rect key="frame" x="89" y="219" width="422" height="162"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="4MC-2p-Ghn"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="ms7-zt-Kyq"/>
+                                </connections>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ePd-gy-BPP">
+                                <rect key="frame" x="223" y="74" width="154" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="154" id="Lhf-td-Wbn"/>
+                                </constraints>
+                                <state key="normal" title="Add to UIPIckerView">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="a75-Xg-UAd" kind="show" id="f46-mP-nbZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="aim-r6-9sp" firstAttribute="top" secondItem="ePd-gy-BPP" secondAttribute="bottom" constant="94" id="0l8-dQ-SND"/>
+                            <constraint firstItem="aim-r6-9sp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="73" id="5gO-TS-fOf"/>
+                            <constraint firstItem="ePd-gy-BPP" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="54" id="87u-eY-0WW"/>
+                            <constraint firstItem="ePd-gy-BPP" firstAttribute="centerX" secondItem="aim-r6-9sp" secondAttribute="centerX" id="Xt9-Mm-bnc"/>
+                            <constraint firstItem="aim-r6-9sp" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="bDj-gH-q0b"/>
+                            <constraint firstItem="ePd-gy-BPP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ebM-lI-sy3"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="pickerView" destination="aim-r6-9sp" id="rg0-PI-XUq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+        </scene>
+        <!--Add To Picker View-->
+        <scene sceneID="2bC-Xg-T1A">
+            <objects>
+                <viewController id="a75-Xg-UAd" customClass="AddToPickerView" customModule="coreData_2_UIPickerView" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vkG-tO-JPI"/>
+                        <viewControllerLayoutGuide type="bottom" id="Wzj-lP-8eB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="eIe-iO-7aW">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cJa-ma-bWx">
+                                <rect key="frame" x="45" y="53" width="146" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="9qA-OM-nqZ"/>
+                                    <constraint firstAttribute="width" constant="146" id="MUP-kv-2I3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Surname" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OZ6-Ef-75V">
+                                <rect key="frame" x="45" y="99" width="146" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="hs1-9J-Mgf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z3d-9w-QS8">
+                                <rect key="frame" x="54" y="137" width="128" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="128" id="NPo-0Z-xbW"/>
+                                </constraints>
+                                <state key="normal" title="Done">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="addToCoreDataButton:" destination="a75-Xg-UAd" eventType="touchUpInside" id="EJN-2V-JEP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="OZ6-Ef-75V" firstAttribute="top" secondItem="cJa-ma-bWx" secondAttribute="bottom" constant="16" id="4QE-vJ-5n8"/>
+                            <constraint firstItem="Z3d-9w-QS8" firstAttribute="leading" secondItem="OZ6-Ef-75V" secondAttribute="leading" id="9bw-hW-Sak"/>
+                            <constraint firstItem="cJa-ma-bWx" firstAttribute="leading" secondItem="eIe-iO-7aW" secondAttribute="leadingMargin" constant="29" id="EYX-HZ-bOC"/>
+                            <constraint firstItem="OZ6-Ef-75V" firstAttribute="leading" secondItem="cJa-ma-bWx" secondAttribute="leading" id="OGb-iO-Nbn"/>
+                            <constraint firstItem="Z3d-9w-QS8" firstAttribute="top" secondItem="OZ6-Ef-75V" secondAttribute="bottom" constant="8" symbolic="YES" id="Tk6-8Q-6o9"/>
+                            <constraint firstItem="cJa-ma-bWx" firstAttribute="top" secondItem="vkG-tO-JPI" secondAttribute="bottom" constant="33" id="Yvv-pV-IV9"/>
+                            <constraint firstItem="Wzj-lP-8eB" firstAttribute="top" secondItem="Z3d-9w-QS8" secondAttribute="bottom" constant="412" id="cDH-Re-jqp"/>
+                            <constraint firstItem="OZ6-Ef-75V" firstAttribute="trailing" secondItem="cJa-ma-bWx" secondAttribute="trailing" id="srO-oK-GjQ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="name" destination="cJa-ma-bWx" id="xwj-bg-jUZ"/>
+                        <outlet property="surName" destination="OZ6-Ef-75V" id="OS6-em-hJ1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jO8-CR-UQh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1263" y="490"/>
         </scene>
     </scenes>
 </document>
