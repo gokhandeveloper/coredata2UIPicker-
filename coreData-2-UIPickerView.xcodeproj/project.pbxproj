@@ -43,7 +43,7 @@
 		76DCB0131AE548280059D233 /* PickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerView.swift; sourceTree = "<group>"; };
 		76DCB0151AE55C200059D233 /* coreData-2-UIPickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "coreData-2-UIPickerView.swift"; sourceTree = SOURCE_ROOT; };
 		76DCB0171AE55F750059D233 /* AddToPickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddToPickerView.swift; sourceTree = "<group>"; };
-		76DCB0191AE5643F0059D233 /* ReadMe.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = ReadMe.md; sourceTree = "<group>"; };
+		76DCB0191AE5643F0059D233 /* ReadMe.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = ReadMe.md; path = "coreData-2-UIPickerView/ReadMe.md"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +67,7 @@
 		76DCAFE21AE532E50059D233 = {
 			isa = PBXGroup;
 			children = (
+				76DCB0191AE5643F0059D233 /* ReadMe.md */,
 				76DCAFED1AE532E50059D233 /* coreData-2-UIPickerView */,
 				76DCB0061AE532E50059D233 /* coreData-2-UIPickerViewTests */,
 				76DCAFEC1AE532E50059D233 /* Products */,
@@ -88,7 +89,6 @@
 				76DCAFF01AE532E50059D233 /* AppDelegate.swift */,
 				76DCB0151AE55C200059D233 /* coreData-2-UIPickerView.swift */,
 				76DCAFF71AE532E50059D233 /* Main.storyboard */,
-				76DCB0191AE5643F0059D233 /* ReadMe.md */,
 				76DCB0131AE548280059D233 /* PickerView.swift */,
 				76DCB0171AE55F750059D233 /* AddToPickerView.swift */,
 				76DCAFFA1AE532E50059D233 /* Images.xcassets */,
