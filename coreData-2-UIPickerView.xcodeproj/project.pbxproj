@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		76DCAFF11AE532E50059D233 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76DCAFF01AE532E50059D233 /* AppDelegate.swift */; };
 		76DCAFF41AE532E50059D233 /* coreData_2_UIPickerView.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 76DCAFF21AE532E50059D233 /* coreData_2_UIPickerView.xcdatamodeld */; };
-		76DCAFF61AE532E50059D233 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76DCAFF51AE532E50059D233 /* ViewController.swift */; };
 		76DCAFF91AE532E50059D233 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76DCAFF71AE532E50059D233 /* Main.storyboard */; };
 		76DCAFFB1AE532E50059D233 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76DCAFFA1AE532E50059D233 /* Images.xcassets */; };
 		76DCAFFE1AE532E50059D233 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76DCAFFC1AE532E50059D233 /* LaunchScreen.xib */; };
@@ -31,7 +30,6 @@
 		76DCAFEF1AE532E50059D233 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		76DCAFF01AE532E50059D233 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		76DCAFF31AE532E50059D233 /* coreData_2_UIPickerView.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = coreData_2_UIPickerView.xcdatamodel; sourceTree = "<group>"; };
-		76DCAFF51AE532E50059D233 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		76DCAFF81AE532E50059D233 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		76DCAFFA1AE532E50059D233 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		76DCAFFD1AE532E50059D233 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -80,7 +78,6 @@
 			isa = PBXGroup;
 			children = (
 				76DCAFF01AE532E50059D233 /* AppDelegate.swift */,
-				76DCAFF51AE532E50059D233 /* ViewController.swift */,
 				76DCAFF71AE532E50059D233 /* Main.storyboard */,
 				76DCAFFA1AE532E50059D233 /* Images.xcassets */,
 				76DCAFFC1AE532E50059D233 /* LaunchScreen.xib */,
@@ -215,7 +212,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				76DCAFF61AE532E50059D233 /* ViewController.swift in Sources */,
 				76DCAFF41AE532E50059D233 /* coreData_2_UIPickerView.xcdatamodeld in Sources */,
 				76DCAFF11AE532E50059D233 /* AppDelegate.swift in Sources */,
 			);
